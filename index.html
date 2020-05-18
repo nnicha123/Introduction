@@ -5,43 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body {
+            font-family: sans-serif;
+            background-color: #2222;
+        }
+
+        h1 {
+            height: 50px;
+            background-image: linear-gradient(to right, rgb(46, 46, 168), rgb(0, 238, 255));
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 0 0 100px 100px;
+        }
+
         .image-quote-container {
-            width: 300px;
-            height: 300px;
+            height: 200px;
             display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         img {
             height: 100%;
             border-radius: 50%;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+        .others-wrapper{
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .motto,
+        .basic-info,
+        .personal-info,
+        .hobbies,
+        .experience {
+            height: 10=20px;
+            padding: 20px 40px;
+            width: 300px;
+            font-size: 20px;
+            background-image: linear-gradient(to bottom, rgb(138, 39, 55), pink);
+            border-radius: 20px;
+            color: white;
+        }
+        .hobbies{
+            margin-top: 40px;
+            margin-left: 40px;
+            margin-right: 40px;
         }
     </style>
     <title>Self Introduction</title>
 </head>
 
 <body>
-    <h1>Nicha Ngamtweerat</h1>
+    <h1>About Me</h1>
     <div class="image-quote-container">
+        <div class="basic-info">
+            <li>Name : Nicha Ngamtweerat</li>
+            <li>Nickname : Fern</li>
+            <li>Age : 24 years old</li>
+        </div>
         <img src="me.jpg" alt="">
-        <h2 class="motto">Motto : I want to be all that I am capable of becoming -> Katherine Mansfield (Make it quote
-            style)</h2>
+        <div class="motto">Favourite Quote
+            <li>I want to be all that I am capable of becoming -> Katherine Mansfield</li>
+        </div>
     </div>
+    <div class="others-wrapper">
+        <div class="personal-info">Personal Info
+            <li>Address : 123 Ramintra</li>
+            <li>Email : nicha_nga@hotmail.com</li>
+        </div>
 
-    <h2>Address : 1234 Ramintra</h2>
-    <h2>Hobbies</h2>
-    <ul>
-        <li>Swimming</li>
-        <li>Walk my dog</li>
-        <li>Coding</li>
-        <li>Play computer games</li>
-    </ul>
-    <h2>Studies</h2>
-    <li>Electronics engineer</li>
-    <h2>Past Experiences</h2>
-    <ul>
-        <li>Toyota Tsusho Denso Electronics Thailand -> Software Engineer</li>
-        <li>Nissan Motor Asia Pacific -> Strategic Planner</li>
-    </ul>
+        <div class="hobbies">Hobbies
+            <li>Swimming</li>
+            <li>Walk my dog</li>
+            <li>Coding</li>
+            <li>Play computer games</li>
+        </div>
+
+        <div class="experience">Past Experiences
+            <li>Toyota Tsusho Denso Electronics Thailand -> Software Engineer</li>
+            <li>Nissan Motor Asia Pacific -> Strategic Planner</li>
+        </div>
+    </div>
 </body>
 
 </html>
