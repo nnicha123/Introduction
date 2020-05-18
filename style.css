@@ -1,0 +1,9 @@
+.image-quote-container{
+    width: 300px;
+    height: 300px;
+    display: flex;
+}
+img{
+    height: 100%;
+    border-radius: 50%;
+}
